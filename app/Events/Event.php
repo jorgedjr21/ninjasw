@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace NinjaSJ\Events;
 
 abstract class Event
 {

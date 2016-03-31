@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace NinjaSJ\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace NinjaSJ\Http\Controllers\Auth;
 
-use App\User;
+use NinjaSJ\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use NinjaSJ\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
