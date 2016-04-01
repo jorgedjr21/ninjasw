@@ -8,13 +8,15 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use SoftDeletes;
+
+    protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','privileges'
     ];
 
     /**
@@ -32,4 +34,12 @@ class User extends Authenticatable
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    public function student(){
+        return $this->hasMany(Student::class);
+    }
+
+    public function startup(){
+        return $this->hasMany(Startup::class);
+    }
 }
